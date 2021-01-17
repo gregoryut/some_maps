@@ -94,7 +94,8 @@ int_access <- ggplot(full_df, aes(fill = pct_no_internet_cut)) +
   ) +
   theme(
     plot.title = element_text(color = "royalblue1", size = 12, face = "bold", hjust = 0.5),
-    plot.subtitle = element_text(hjust = 0.5)
+    plot.subtitle = element_text(hjust = 0.5),
+    panel.background = element_blank()
   )
 
 int_access
@@ -115,8 +116,9 @@ avg_life_exp_plot <- ggplot(full_df, aes(fill = life_exp_cut), size = 0.01) +
   ) +
   theme(
     plot.title = element_text(color = "royalblue1", size = 12, face = "bold", hjust = 0.5),
-    plot.subtitle = element_text(hjust = 0.5)
-  )
+    plot.subtitle = element_text(hjust = 0.5),
+    panel.background = element_blank()
+  ) 
 
 avg_life_exp_plot
 
